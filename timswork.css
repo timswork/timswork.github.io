@@ -1,0 +1,371 @@
+/*
+Theme Name:		TIMSWORK.NET
+Description:	Tim's tailored CSS so far
+Author:			Tim
+Author URI:		http://www.timswork.net
+Filename:		timswork.css
+Tags:			Timswork, Website
+
+Support:		Code School principles
+Support:		http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
+
+TIMSWORK 02.20180507	Adjustements for siteheader h1 & h2, now that TIM is text
+TIMSWORK 02.20170422  Added major tag resets & tag standards base
+TIMSWORK 02.20141028  Initial code build
+*/
+
+
+/*********** Major tag resets to make a solid base for the future ************/
+
+html, head, body,
+h1, h2, h3, h4, h5, h6,
+a, p, ol, ul, li {
+	padding:					0;
+	border:						0;
+	margin:						0;
+	font-size:					100%;
+	font:						inherit;
+}
+
+html {
+	display:					block;
+	-ms-text-size-adjust:		100%;
+	-webkit-text-size-adjust:	100%;
+}
+
+html:focus {
+	outline:					none;
+}
+
+head {
+	display:					none;
+}
+
+body {
+	display:					block;
+	margin:						8px;
+	-moz-osx-font-smoothing:	grayscale;
+	-webkit-font-smoothing:		antialiased;
+}
+
+h1 {
+	display:					block;
+	font-size: 					2em;
+	font-weight: 				bold;
+	margin:						0.67em 0 0.67em 0;
+}
+
+h2 {
+	display:					block;
+	font-size: 					1.5em;
+	font-weight: 				bold;
+	margin:						0.83em 0 0.83em 0;
+}
+
+h3 {
+	display:					block;
+	font-size:					1.17em;
+	font-weight:				bold;
+	margin:						1em 0 1em 0;
+	color:						darkgray;
+}
+
+h4 {
+	display:					block;
+	font-weight:				bold;
+	margin:						1.33em 0 1.33em 0;
+	/* TBD */
+}
+
+h5 {
+	display:					block;
+	font-size:					0.83em;
+	font-weight:				bold;
+	margin:						1.67em 0 1.67em 0;
+}
+
+h6 {
+	display:					block;
+	font-size:					0.67em;
+	font-weight:				bold;
+	margin:						2.33em 0 2.33em 0;
+}
+
+a, button {
+	color:						inherit;
+	transition:					0.2s;
+}
+
+a {
+	text-decoration:			none;
+}
+
+button {
+	overflow:					visible;
+	border:						0;
+	font:						inherit;
+	-webkit-font-smoothing:		inherit;
+	letter-spacing:				inherit;
+	background:					none;
+	cursor:						pointer;
+}
+
+::-moz-focus-inner {
+	padding:					0;
+	border:						0;
+}
+
+p {
+	display:					block;
+	margin:						1em 0 1em 0;
+}
+
+ol {
+	display:					block;
+	list-style-type:			decimal;
+	margin:						1em 0 1em 0;
+	padding-left:				40px;
+}
+
+ul {
+	display:					block;
+	list-style-type:			disc;
+	margin:						1em 0 1em 0;
+	padding-left:				40px;
+}
+
+li {
+	display:					list-item;
+}
+
+img {
+	max-width:					100%;
+	height:						auto;
+	border:						0;
+}
+
+strong {
+	font-weight:				bold;
+}
+
+
+
+/******************* Tailoring the TIMSWORK-specific styles *******************/
+
+@font-face {
+						font-family: "Clear Sans";
+						src: url('fonts/clearsans/ClearSans-Regular.eot');
+						src: url('fonts/clearsans/ClearSans-Regular.eot?#iefix') format('embedded-opentype'),
+						url('fonts/clearsans/ClearSans-Regular.woff') format('woff'),
+						url('fonts/clearsans/ClearSans-Regular.ttf') format('truetype'),
+						url('fonts/clearsans/ClearSans-Regular.svg') format('svg');
+						font-weight: normal;
+						font-style: normal;
+}
+
+body {
+	font-family:		"Clear Sans", Verdana, Calibri, Helvetica, sans-serif;
+	font-size:			large;
+	text-align:			center;
+	color:				gray;
+}
+
+h1 {
+	font-size:			2.75em;
+	color:				#00ace6; /* a slightly darker DeepSkyBlue */
+}
+
+h2 {
+	color:				gray;
+}
+
+a:hover {
+	color:				orange;
+	font-weight:		bold;
+}
+
+a {
+	color:				gray;
+}
+
+.itemlist {
+	padding: 			0;
+	margin:				0;
+	line-height:		1.5em;
+	list-style-type:	none;
+	color:				gray;
+}
+
+.footer {
+	text-align:			left;
+}
+
+.twitter-timeline {
+	width:				600px;
+	height:				500px;
+}
+
+.siteheader {
+	display:			block;
+	margin:				0 auto 0 auto;
+}
+
+.siteheader h1 {
+	color:				#00ace6;
+	font-size:		2.5em;
+	margin:				0px auto 0px auto;
+}
+
+.siteheader h2 {
+	color:				#00ace6;
+	font-size:		1.08em;
+	line-height:	75%;
+	margin:				0px auto 0px auto;
+}
+
+
+}
+.siteheader h3 {
+	color:				orange;
+}
+
+
+#sitemenu {
+	color:				gray;
+	font-size:			x-large;
+	font-weight:		bold;
+	padding:			0.5em;
+	margin:				0px auto 0px auto;
+}
+
+.sitemenusublist {
+	color:				gray;
+	font-size:			x-large;
+	line-height:		1.5em;
+	padding:			0;
+	margin:				0;
+	list-style-type:	none;
+}
+
+#siteupdate {
+	font-family:		Georgia, "Times New Roman", Times, serif;
+	font-size:			medium;
+	text-align:			left;
+	font-style:			italic;
+	line-height:		1.5em;
+	color:				gray;
+	background-color:	#ffffe0; /* this is the siteupdate yellow background! */
+	padding:			1em 2em 1em 4em;
+	width:				60%;
+	margin:				0px auto 0px auto;
+}
+
+#TimText {
+	margin:				0 15% 0 15%;
+	color:				gray;
+	text-align:			left;
+}
+
+
+/* THE PLAYGROUND SPECIFIC AREA */
+
+#pgTable {
+	display:			table;
+	border-spacing:		10px;
+	background-color:	lightyellow;
+	margin:				0px 7% 0px 7%;
+}
+
+#pgTableR1 {
+	display:			table-row;
+}
+
+#pgTableR1sb {
+	display:			table-cell;
+	background-color:	silver;
+	text-align:			left;
+	padding:			10px;
+	width:				200px;
+}
+
+#pgTableR1c2 {
+	display:			table-cell;
+	width:				600px;
+	background-color:	white;
+}
+
+#pgTableR2 {
+	display:			table-row;
+}
+
+#pgTableR2sb {
+	display:			table-cell;
+	background-color:	skyblue;
+	text-align:			right;
+	padding:			10px;
+	width:				500px;
+}
+
+#pgTableR2c2 {
+	display:			table-cell;
+	width:				100px;
+	background-color:	purple;
+	color:				white;
+}
+
+#pgTableR2c3 {
+	display:			table-cell;
+	width:				200px;
+	background-color:	cyan;
+	color:				orange;
+	font-weight:		bold;
+}
+
+#pgTableR3 {
+	display:			table-row;
+}
+
+#pgTableR3sb {
+	display:			table-cell;
+	background-color:	gold;
+	color:				black;
+	text-align:			left;
+	padding:			40px;
+	width:				50%;
+	height:				200px;
+}
+
+#pgTableR3c2 {
+	display:			table-cell;
+	background-color:	pink;
+	color:				green;
+	font-weight:		bold;
+	text-align:			right;
+	padding:			10px;
+	width:				50%;
+}
+
+#tch13 {
+	border:				2px dashed black;
+	border-collapse:	collapse;
+	margin:				0px auto 0px auto;
+	caption-side:		bottom;
+}
+
+#tch13 th {
+	background-color:	#a7cece;
+	color:				white;
+	font-weight:		bold;
+}
+
+#tch13 td {
+	border:				1px dotted gray;
+}
+
+#tch13 caption {
+	color:				red;
+}
+
+#tch13 tr:nth-child(odd) {
+	background-color:	silver;
+}
